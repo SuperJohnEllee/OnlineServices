@@ -1,0 +1,30 @@
+
+		<div class="row">
+			<div class="col-md-4">
+				<?php
+              		$disp_services = "SELECT * FROM services ORDER BY ServiceID DESC";
+              		$disp_res = mysqli_query($conn, $disp_services);
+
+              		if (mysqli_num_rows($disp_res) > 0) {
+              			while ($disp_row = mysqli_fetch_assoc($disp_res)) {
+              			$service_image = "service_image/". $disp_row['ServiceImage'];
+              	?>
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" src="<?php echo $service_image; ?>" alt="Card image cap" height="200">
+                <div class="card-body">
+                	<h3 class="card-title"><?php echo $disp_row['ServiceName']; ?></h3>
+                  <p class="card-text"><?php echo $disp_row['ServiceDescription']; ?></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-primary mr-5"><span class="fa fa-eye fa-2x"></span> View</button>
+                      <button type="button" class="btn btn-success"><span class="fa fa-ticket fa-2x"></span> Book</button>
+                    </div>
+                  </div>
+              <?php } ?>
+             <?php  } else {
+
+             } ?>
+                </div>
+              </div>
+            </div>
+		</div>
