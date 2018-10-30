@@ -1,8 +1,9 @@
-Create a database in localhost/phpmyadmin or 
-if your port is 8080 --> localhost:8080/phpmyadmin
+Online Utility Services 
 
-Database name:  online_services
 
-then export the online_services.sql file to the database
 
-and there you have it!!!
+Customer Registration
+Utility Services Profiling
+Admin Profiling
+Booking of Utility Services
+Approval of booking thorugh email
