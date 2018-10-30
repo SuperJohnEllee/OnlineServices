@@ -2,8 +2,8 @@ Online Utility Services
 
 
 
-Customer Registration
-Utility Services Profiling
-Admin Profiling
-Booking of Utility Services
-Approval of booking thorugh email
+Customer Registration <br>
+Utility Services Profiling <br>
+Admin Profiling <br>
+Booking of Utility Services <br>
+Approval of booking thorugh email <br>
